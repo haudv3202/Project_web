@@ -9,7 +9,7 @@ class c_register {
         $this->addUser();
     }
 
-    public function addUser(){
+    function addUser(){
         if(isset($_POST["register"])){
             $id = NULLL;
             $kich_hoat = 0;

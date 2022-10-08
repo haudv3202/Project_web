@@ -7,4 +7,11 @@ class m_khach_hang extends database {
             $this->setQuery($sql);
             return $this->execute(array($id,$fullname,md5($password),$email,$image,$kich_hoat,$vaitro));
     }
+
+    public function sign_in($email,$password){
+            $sql = "SELECT * FROM khach_hang WHERE email = ? AND mat_khau = ?";
+
+            $this->setQuery($sql);
+            return $this->loadRow(array($email,md5($password)));
+    }
 }

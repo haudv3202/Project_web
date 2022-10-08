@@ -1,11 +1,12 @@
 <?php
 @session_start();
-if (isset($_SESSION['user'])) {
-
-include ("controllers/c_home.php");
-$home = new c_home();
-$home->index();
+if (isset($_SESSION["admin"])) {
+    include ("controllers/c_home.php");
+    $home = new c_home();
+    $home->index();
 } else {
-    header("location:login.php");
+    $_SESSION["admin_error"] = "Xin lỗi bạn Vui lòng đăng nhập!";
+    header("location:../sign_in.php");
 }
-?>
+
+//?>

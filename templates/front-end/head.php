@@ -28,4 +28,5 @@
     <link rel="stylesheet" href="public/layout/css/default.css">
     <link rel="stylesheet" href="public/layout/css/style.css">
     <link rel="stylesheet" href="public/layout/css/responsive.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>

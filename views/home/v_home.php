@@ -1,6 +1,20 @@
 <!-- main-area -->
 <main>
+    <?php
+    if(isset($_SESSION["welcome_user"])){
+        $welcome = $_SESSION["welcome_user"];
+        echo "<script>
+      Swal.fire({
+                  title: '$welcome',
+                  icon: 'success',
+                  confirmButtonText: 'OK'
+                })
+    </script>";
+        unset($_SESSION["welcome_user"]);
+    }
 
+
+    ?>
     <!-- slider-area -->
     <section class="slider-area position-relative">
         <div class="third-slider-active">
