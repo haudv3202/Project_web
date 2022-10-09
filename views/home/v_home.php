@@ -1612,6 +1612,7 @@
                 </div>
             </div>
             <div class="row new-arrival-active">
+                <?php foreach($like_products as $value){?>
                 <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">
                     <div class="new-arrival-item text-center mb-50">
                         <div class="thumb mb-25">
@@ -1629,24 +1630,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one">
-                    <div class="new-arrival-item text-center mb-50">
-                        <div class="thumb mb-25">
-                            <div class="discount-tag">- 20%</div>
-                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product02.jpg" alt=""></a>
-                            <div class="product-overlay-action">
-                                <ul>
-                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-details.html">Mountain Shoes</a></h5>
-                            <span class="price">$25.00</span>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
+
+<!--                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one">-->
+<!--                    <div class="new-arrival-item text-center mb-50">-->
+<!--                        <div class="thumb mb-25">-->
+<!--                            <div class="discount-tag">- 20%</div>-->
+<!--                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product02.jpg" alt=""></a>-->
+<!--                            <div class="product-overlay-action">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>-->
+<!--                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <h5><a href="shop-details.html">Mountain Shoes</a></h5>-->
+<!--                            <span class="price">$25.00</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+                <?php foreach($like_products as $value){?>
                 <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two cat-one">
                     <div class="new-arrival-item text-center mb-50">
                         <div class="thumb mb-25">
@@ -1664,95 +1670,100 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">
-                    <div class="new-arrival-item text-center mb-50">
-                        <div class="thumb mb-25">
-                            <div class="discount-tag new">New</div>
-                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product04.jpg" alt=""></a>
-                            <div class="product-overlay-action">
-                                <ul>
-                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-details.html">Women Shoes</a></h5>
-                            <span class="price">$12.90</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one">
-                    <div class="new-arrival-item text-center mb-50">
-                        <div class="thumb mb-25">
-                            <div class="discount-tag">- 20%</div>
-                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product05.jpg" alt=""></a>
-                            <div class="product-overlay-action">
-                                <ul>
-                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-details.html">Men Shoes</a></h5>
-                            <span class="price">$49.90</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two cat-one">
-                    <div class="new-arrival-item text-center mb-50">
-                        <div class="thumb mb-25">
-                            <div class="discount-tag new">New</div>
-                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product06.jpg" alt=""></a>
-                            <div class="product-overlay-action">
-                                <ul>
-                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-details.html">Fashion Shoes</a></h5>
-                            <span class="price">$31.99</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one">
-                    <div class="new-arrival-item text-center mb-50">
-                        <div class="thumb mb-25">
-                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product07.jpg" alt=""></a>
-                            <div class="product-overlay-action">
-                                <ul>
-                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-details.html">New Shoes</a></h5>
-                            <span class="price">$19.99</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">
-                    <div class="new-arrival-item text-center mb-50">
-                        <div class="thumb mb-25">
-                            <div class="discount-tag">- 45%</div>
-                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product08.jpg" alt=""></a>
-                            <div class="product-overlay-action">
-                                <ul>
-                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-details.html">Travelling Bags</a></h5>
-                            <span class="price">$9.99</span>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
+<!--                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">-->
+<!--                    <div class="new-arrival-item text-center mb-50">-->
+<!--                        <div class="thumb mb-25">-->
+<!--                            <div class="discount-tag new">New</div>-->
+<!--                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product04.jpg" alt=""></a>-->
+<!--                            <div class="product-overlay-action">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>-->
+<!--                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <h5><a href="shop-details.html">Women Shoes</a></h5>-->
+<!--                            <span class="price">$12.90</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one">-->
+<!--                    <div class="new-arrival-item text-center mb-50">-->
+<!--                        <div class="thumb mb-25">-->
+<!--                            <div class="discount-tag">- 20%</div>-->
+<!--                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product05.jpg" alt=""></a>-->
+<!--                            <div class="product-overlay-action">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>-->
+<!--                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <h5><a href="shop-details.html">Men Shoes</a></h5>-->
+<!--                            <span class="price">$49.90</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two cat-one">-->
+<!--                    <div class="new-arrival-item text-center mb-50">-->
+<!--                        <div class="thumb mb-25">-->
+<!--                            <div class="discount-tag new">New</div>-->
+<!--                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product06.jpg" alt=""></a>-->
+<!--                            <div class="product-overlay-action">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>-->
+<!--                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <h5><a href="shop-details.html">Fashion Shoes</a></h5>-->
+<!--                            <span class="price">$31.99</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one">-->
+<!--                    <div class="new-arrival-item text-center mb-50">-->
+<!--                        <div class="thumb mb-25">-->
+<!--                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product07.jpg" alt=""></a>-->
+<!--                            <div class="product-overlay-action">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>-->
+<!--                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <h5><a href="shop-details.html">New Shoes</a></h5>-->
+<!--                            <span class="price">$19.99</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">-->
+<!--                    <div class="new-arrival-item text-center mb-50">-->
+<!--                        <div class="thumb mb-25">-->
+<!--                            <div class="discount-tag">- 45%</div>-->
+<!--                            <a href="shop-details.html"><img src="public/layout/img/product/shoes_arrival_product08.jpg" alt=""></a>-->
+<!--                            <div class="product-overlay-action">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="cart.html"><i class="far fa-heart"></i></a></li>-->
+<!--                                    <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <h5><a href="shop-details.html">Travelling Bags</a></h5>-->
+<!--                            <span class="price">$9.99</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
     </section>

@@ -1,34 +1,26 @@
-<script src="public/assets/libs/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap tether Core JavaScript -->
-<script src="public/assets/libs/popper.js/dist/umd/popper.min.js"></script>
-<script src="public/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="public/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-<script src="public/assets/extra-libs/sparkline/sparkline.js"></script>
-<!--Wave Effects -->
-<script src="public/dist/js/waves.js"></script>
-<!--Menu sidebar -->
-<script src="public/dist/js/sidebarmenu.js"></script>
-<!--Custom JavaScript -->
-<script src="public/dist/js/custom.min.js"></script>
-<!--This page JavaScript -->
-<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-<script src="public/assets/libs/flot/excanvas.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.time.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="public/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="public/dist/js/pages/chart/chart-page-init.js"></script>
+<footer class="footer footer-static footer-light navbar-border navbar-shadow">
+    <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">2018  &copy; Copyright <a class="text-bold-800 grey darken-2" href="https://themeselection.com" target="_blank">ThemeSelection</a></span>
+        <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
+            <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/" target="_blank"> More themes</a></li>
+            <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/support" target="_blank"> Support</a></li>
+            <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/products/chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit/" target="_blank"> Purchase</a></li>
+        </ul>
+    </div>
+</footer>
 
-<!-- this page js -->
-<script src="public/assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
-<script src="public/assets/extra-libs/multicheck/jquery.multicheck.js"></script>
-<script src="public/assets/extra-libs/DataTables/datatables.min.js"></script>
-<script>
-    /****************************************
-     *       Basic Table                   *
-     ****************************************/
-    $('#zero_config').DataTable();
-</script>
+<!-- BEGIN VENDOR JS-->
+<script src="public/theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+<!-- BEGIN VENDOR JS-->
+<!-- BEGIN PAGE VENDOR JS-->
+<script src="public/theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script>
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN CHAMELEON  JS-->
+<script src="public/theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
+<script src="public/theme-assets/js/core/app-lite.js" type="text/javascript"></script>
+<!-- END CHAMELEON  JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="public/theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL JS-->
+
+</body>
+</html>

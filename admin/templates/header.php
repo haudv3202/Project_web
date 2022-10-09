@@ -1,176 +1,51 @@
-<header class="topbar" data-navbarbg="skin5">
-    <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-        <div class="navbar-header" data-logobg="skin5">
-            <!-- This is for the sidebar toggle which is visible on mobile only -->
-            <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
-            <!-- ============================================================== -->
-            <!-- Logo -->
-            <!-- ============================================================== -->
-            <a class="navbar-brand" href="index.html">
-                <!-- Logo icon -->
-                <b class="logo-icon p-l-10">
-                    <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                    <!-- Dark Logo icon -->
-                    <img src="public/assets/images/logo-icon.png" alt="homepage" class="light-logo" />
+<body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
 
-                </b>
-                <!--End Logo icon -->
-                <!-- Logo text -->
-                <span class="logo-text">
-                             <!-- dark Logo text -->
-                             <img src="public/assets/images/logo-text.png" alt="homepage" class="light-logo" />
-
-                        </span>
-                <!-- Logo icon -->
-                <!-- <b class="logo-icon"> -->
-                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                <!-- Dark Logo icon -->
-                <!-- <img src="assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-
-                <!-- </b> -->
-                <!--End Logo icon -->
-            </a>
-            <!-- ============================================================== -->
-            <!-- End Logo -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Toggle which is visible on mobile only -->
-            <!-- ============================================================== -->
-            <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Logo -->
-        <!-- ============================================================== -->
-        <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-            <!-- ============================================================== -->
-            <!-- toggle and nav items -->
-            <!-- ============================================================== -->
-            <ul class="navbar-nav float-left mr-auto">
-                <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
-                <!-- ============================================================== -->
-                <!-- create new -->
-                <!-- ============================================================== -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>
-                        <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <!-- ============================================================== -->
-                <!-- Search -->
-                <!-- ============================================================== -->
-                <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
-                    <form class="app-search position-absolute">
-                        <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a>
-                    </form>
-                </li>
-            </ul>
-            <!-- ============================================================== -->
-            <!-- Right side toggle and nav items -->
-            <!-- ============================================================== -->
-            <ul class="navbar-nav float-right">
-                <!-- ============================================================== -->
-                <!-- Comment -->
-                <!-- ============================================================== -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell font-24"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <!-- ============================================================== -->
-                <!-- End Comment -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Messages -->
-                <!-- ============================================================== -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-comment-processing"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
-                        <ul class="list-style-none">
-                            <li>
-                                <div class="">
-                                    <!-- Message -->
-                                    <a href="javascript:void(0)" class="link border-top">
-                                        <div class="d-flex no-block align-items-center p-10">
-                                            <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
-                                            <div class="m-l-10">
-                                                <h5 class="m-b-0">Event today</h5>
-                                                <span class="mail-desc">Just a reminder that event</span>
-                                            </div>
+<!-- fixed-top-->
+<nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+    <div class="navbar-wrapper">
+        <div class="navbar-container content">
+            <div class="collapse navbar-collapse show" id="navbar-mobile">
+                <ul class="nav navbar-nav mr-auto float-left">
+                    <li class="nav-item d-block d-md-none"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+                    <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                    <li class="nav-item dropdown navbar-search"><a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#"><i class="ficon ft-search"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="arrow_box">
+                                <form>
+                                    <div class="input-group search-box">
+                                        <div class="position-relative has-icon-right full-width">
+                                            <input class="form-control" id="search" type="text" placeholder="Search here...">
+                                            <div class="form-control-position navbar-search-close"><i class="ft-x">   </i></div>
                                         </div>
-                                    </a>
-                                    <!-- Message -->
-                                    <a href="javascript:void(0)" class="link border-top">
-                                        <div class="d-flex no-block align-items-center p-10">
-                                            <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
-                                            <div class="m-l-10">
-                                                <h5 class="m-b-0">Settings</h5>
-                                                <span class="mail-desc">You can customize this template</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!-- Message -->
-                                    <a href="javascript:void(0)" class="link border-top">
-                                        <div class="d-flex no-block align-items-center p-10">
-                                            <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
-                                            <div class="m-l-10">
-                                                <h5 class="m-b-0">Pavan kumar</h5>
-                                                <span class="mail-desc">Just see the my admin!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!-- Message -->
-                                    <a href="javascript:void(0)" class="link border-top">
-                                        <div class="d-flex no-block align-items-center p-10">
-                                            <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
-                                            <div class="m-l-10">
-                                                <h5 class="m-b-0">Luanch Admin</h5>
-                                                <span class="mail-desc">Just see the my new admin!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </form>
                             </li>
                         </ul>
-                    </div>
-                </li>
-                <!-- ============================================================== -->
-                <!-- End Messages -->
-                <!-- ============================================================== -->
-
-                <!-- ============================================================== -->
-                <!-- User profile and search -->
-                <!-- ============================================================== -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
-                    <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                        <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                        <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                        <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout.php?func=exit"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                        <div class="dropdown-divider"></div>
-                        <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
-                    </div>
-                </li>
-                <!-- ============================================================== -->
-                <!-- User profile and search -->
-                <!-- ============================================================== -->
-            </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav float-right">
+                    <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                            <div class="arrow_box"><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> Chinese</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-ru"></i> Russian</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i> Spanish</a></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav float-right">
+                    <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail">             </i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="arrow_box_right"><a class="dropdown-item" href="#"><i class="ft-book"></i> Read Mail</a><a class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a><a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read       </a></div>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">             <span class="avatar avatar-online"><img src="public/theme-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="arrow_box_right"><a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="public/theme-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span class="user-name text-bold-700 ml-1">John Doe</span></span></a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i class="ft-mail"></i> My Inbox</a><a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="ft-message-square"></i> Chats</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="logout.php?func=exit"><i class="ft-power"></i> Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>

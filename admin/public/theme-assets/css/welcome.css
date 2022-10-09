@@ -1,0 +1,23 @@
+.background-wl {
+    background-image: url("../images/gif/hinh-anh-gif-khu-rung-nguyen-sinh.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+@keyframes hide_welcome {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.background-wl h1 {
+    animation: hide_welcome 1.5s linear;
+    text-shadow: 5px 2px #1A0703;
+}
+

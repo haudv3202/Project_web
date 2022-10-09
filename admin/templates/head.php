@@ -1,21 +1,30 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/images/favicon.png">
-    <title>Matrix Template - The Ultimate Multipurpose admin template</title>
-    <!-- Custom CSS -->
-    <link href="public/assets/libs/flot/css/float-chart.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="public/dist/css/style.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
+    <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>Dashboard - Chameleon Admin - Modern Bootstrap 4 WebApp & Dashboard HTML Template + UI Kit</title>
+    <link rel="apple-touch-icon" href="public/theme-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="public/theme-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/vendors/css/charts/chartist.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN CHAMELEON  CSS-->
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/css/app-lite.css">
+    <!-- END CHAMELEON  CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/css/pages/dashboard-ecommerce.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="public/theme-assets/css/welcome.css">
+    <!-- END Custom CSS-->
 </head>
