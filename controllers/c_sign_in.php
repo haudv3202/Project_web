@@ -20,11 +20,9 @@ class c_sign_in {
     public function index(){
         $view = "views/register_login/v_sign_in.php";
         include ("templates/login_resgister/layout.php");
-
-        $this->sign_in();
     }
 
-    function sign_in(){
+    public function sign_in(){
         if(isset($_POST["signin"])){
             $email = $this->checkData("your_email");
             $pass = $this->checkData("your_pass");
@@ -33,21 +31,32 @@ class c_sign_in {
 
             if(isset($_SESSION['info'])){
                 $this->info = $_SESSION['info'];
+                echo strtolower($this->info->vai_tro);
                 if(strtolower($this->info->vai_tro) == "user"){
                     $this->unset_ss("logout_admin");
                     $_SESSION["welcome_user"] = "Chào mừng bạn đến với Adada Shop";
+                    $_SESSION["avatar_us"] = $this->info->hinh;
                     header("location:index.php");
-                }else if(strtolower($this->info->vai_tro) == "admin") {
+                }else if(strtolower($this->info->vai_tro) == "manager" || strtolower($this->info->vai_tro) == "membership") {
                     $_SESSION["admin"] = strtolower($this->info->vai_tro);
+                    $_SESSION["avatar_ad"] = $this->info->hinh;
+                    $_SESSION["name_ad"] = $this->info->ho_ten;
+                    $_SESSION["id_ad"] = $this->info->id;
                     header("location:admin");
                 }
             }else {
+                echo "lỗi";
                 $_SESSION['error_login'] = "Sai mật khẩu hoặc email vui lòng nhập lại";
                 header("location:sign_in.php");
             }
 
         }
+
+        $view = "views/register_login/v_sign_in.php";
+        include ("templates/login_resgister/layout.php");
     }
+
+
 
     public function log_out(){
         $this->unset_ss(["user","error_login"]);

@@ -1,86 +1,157 @@
+<!-- --------footer---------- -->
 
-<!-- footer-area -->
-<footer class="dark-bg pt-55 pb-80">
-    <div class="container">
-        <div class="footer-top-wrap">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-logo">
-                        <a href="index.html"><img src="public/layout/img/logo/w_logo.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
+
+<div class="footer1">
+
+    <form action="">
+        <h2>Get The Latest Deals</h2>
+        <p>and receive $20 coupon for first shopping</p>
+        <input type="email" placeholder=" Enter you email address" required>
+        <button type="submit">Subscribe <i class='bx bx-right-arrow-alt'></i> </button>
+    </form>
+</div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
         </div>
-        <div class="footer-middle-wrap">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-link-wrap">
-                        <nav class="menu-links">
-                            <ul>
-                                <li><a href="about-us.html">About us</a></li>
-                                <li><a href="shop-sidebar.html">Store</a></li>
-                                <li><a href="contact.html">Locations</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="contact.html">Support</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Faqs</a></li>
-                            </ul>
-                        </nav>
-                        <div class="footer-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 link-secondary">
+                <i class='bx bxl-facebook-circle' ></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class='bx bxl-google' ></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class='bx bxl-instagram-alt' ></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class='bx bxl-linkedin' ></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class='bx bxl-github' ></i>
+            </a>
         </div>
-        <div class="copyright-wrap">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="copyright-text">
-                        <p>&copy; 2021 <a href="index.html">adara</a>. All Rights Reserved | Ph (+09) 456 457869</p>
-                    </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class='bx bxs-diamond' ></i> HC TECHNOLOGY
+                    </h6>
+                    <p>
+                        Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+                    </p>
                 </div>
-                <div class="col-lg-6">
-                    <div class="pay-method-img">
-                        <img src="public/layout/img/images/payment_method_img.png" alt="">
-                    </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        DANH MỤC
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">ĐIỆN THOẠI</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">MÁY TÍNH</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">ĐỒNG HỒ</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">PHỤ KIỆN</a>
+                    </p>
                 </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 support col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        HỖ TRỢ
+                    </h6>
+                    <p>
+                        HÀ NỘI:0123.456.789
+                    </p>
+                    <p>
+                        SÀI GÒN: 0987.86.86.86
+                    </p>
+                    <p>
+                        THÁI  BÌNH: 09999.456789
+                    </p>
+                    <p>
+                        NAM ĐỊNH: 01234.99999
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">LIÊN HỆ</h6>
+                    <p><i class='bx bxs-home-alt-2' ></i> TẦNG 72 LANDMARK - NGUYỄN CHÍ THANH- HÀ NỘI</p>
+                    <p>
+                        <i class='bx bxl-gmail' ></i>
+                        hctechnology@it.com
+                    </p>
+                    <p><i class='bx bx-phone' ></i> 01234.99999</p>
+                    <p><i class='bx bx-phone' ></i>09999.456789</p>
+                </div>
+                <!-- Grid column -->
             </div>
+            <!-- Grid row -->
         </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">hctechnology@it.com</a>
     </div>
+    <!-- Copyright -->
 </footer>
-<!-- footer-area-end -->
-
-
-
-
-
-<!-- JS here -->
-<script src="public/layout/js/vendor/jquery-3.5.0.min.js"></script>
-<script src="public/layout/js/popper.min.js"></script>
-<script src="public/layout/js/bootstrap.min.js"></script>
-<script src="public/layout/js/isotope.pkgd.min.js"></script>
-<script src="public/layout/js/imagesloaded.pkgd.min.js"></script>
-<script src="public/layout/js/jquery.magnific-popup.min.js"></script>
-<script src="public/layout/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="public/layout/js/bootstrap-datepicker.min.js"></script>
-<script src="public/layout/js/jquery.nice-select.min.js"></script>
-<script src="public/layout/js/jquery.countdown.min.js"></script>
-<script src="public/layout/js/swiper-bundle.min.js"></script>
-<script src="public/layout/js/jarallax.min.js"></script>
-<script src="public/layout/js/slick.min.js"></script>
-<script src="public/layout/js/wow.min.js"></script>
-<script src="public/layout/js/nav-tool.js"></script>
-<script src="public/layout/js/plugins.js"></script>
-<script src="public/layout/js/main.js"></script>
+<!-- Footer -->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="public/layout1/src/js/main.js"></script>
+<script src="public/layout1/src/js/product.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
-<!-- Mirrored from themepixer.com/demo/html/layout/layout/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 May 2021 08:05:37 GMT -->
 </html>

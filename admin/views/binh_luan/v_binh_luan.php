@@ -29,59 +29,38 @@
                                 <thead class="bg-light">
                                 <tr>
                                     <th>Id</th>
-                                    <th>Name Products</th>
-                                    <th>Comments</th>
-                                    <th>New comments</th>
-                                    <th>Oldest</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th class="px-0" >Lượt comments</th>
+                                    <th>Comments mới nhất</th>
+                                    <th>Comments cũ nhất</th>
                                     <th>Settings</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php foreach ($data_bls as $value){?>
                                 <tr >
                                     <td>
-                                        <p class="fw-bold m-0">#1</p>
+                                        <p class="fw-bold m-0">#<?php echo $value->id; ?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">Samsung a7</p>
+                                        <p class="fw-bold m-0"><?php echo $value->ten_hh; ?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">20</p>
+                                        <p class="fw-bold m-0 text-center"><?php echo $date_total_comment["$value->id"]->so_luot; ?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">8-10-2022</p>
+                                        <p class="fw-bold m-0"><?php  echo isset($date_total_comment["$value->id"]->new_date) ? $date_total_comment["$value->id"]->new_date : "Không có bình luận"; ?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">1-9-2022</p>
+                                        <p class="fw-bold m-0"><?php  echo isset($date_total_comment["$value->id"]->old_date) ? $date_total_comment["$value->id"]->old_date : "Không có bình luận"; ?></p>
                                     </td>
                                     <td>
-                                        <button type="button" onclick="location.href='chi_tiet_bl.php?id=test'" class="btn btn-sm btn-rounded ">
+                                        <button type="button" onclick="location.href='chi_tiet_bl.php?id=<?php echo $value->id; ?>'" class="btn btn-sm btn-rounded ">
                                             Detail
                                         </button>
                                     </td>
                                 </tr>
-
-                                <tr >
-                                    <td>
-                                        <p class="fw-bold m-0">#2</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">Iphone 14</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">20</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">8-10-2022</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">1-9-2022</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" onclick="location.href='chi_tiet_bl.php?id=test'" class="btn btn-sm btn-rounded ">
-                                            Detail
-                                        </button>
-                                    </td>
-                                </tr>
+                                <?php }?>
 
                                 </tbody>
                             </table>

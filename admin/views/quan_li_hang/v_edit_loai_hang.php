@@ -25,18 +25,17 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <form>
+                            <form action="" method="POST">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Mã Loại</label>
-                                    <input type="text" disabled placeholder="Auto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">Mã Loại sẽ tự động tăng</div>
+                                    <input type="text" disabled placeholder="<?php echo $loai_hang->id;?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">Mã Loại của bạn</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Tên Loại</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" name="update_name_loai" class="form-control" value="<?php echo $loai_hang->ten_loai;?>">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Update</button>
-                                <button type="button"  class="btn btn-danger">Rest Data</button>
+                                <button type="submit" name="update_loai" class="btn btn-primary">Update</button>
                                 <button type="button" onclick="location.href='ds_loai_hang.php'" class="btn btn-success">Back</button>
                             </form>
                         </div>

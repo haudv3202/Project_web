@@ -10,7 +10,7 @@
 
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-            <li class=" nav-item"><a href="quan_li_loai_hang.php"><i class="la la-cubes"></i><span class="menu-title" data-i18n="">Quản lí hàng</span></a>
+            <li class=" nav-item"><a href="them_loai_hang.php"><i class="la la-cubes"></i><span class="menu-title" data-i18n="">Quản lí loại hàng</span></a>
             </li>
             <li class=" nav-item"><a href="ds_hang.php"><i class="la la-cube"></i><span class="menu-title" data-i18n="">Danh sách hàng</span></a>
             </li>

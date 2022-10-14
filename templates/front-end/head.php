@@ -1,32 +1,20 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Mirrored from themepixer.com/demo/html/layout/layout/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 May 2021 08:04:49 GMT -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Adara - Modern & Multipurpose eCommerce Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" type="image/x-icon" href="public/layout/img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- CSS here -->
-    <link rel="stylesheet" href="public/layout/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/layout/css/animate.min.css">
-    <link rel="stylesheet" href="public/layout/css/magnific-popup.css">
-    <link rel="stylesheet" href="public/layout/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="public/layout/css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="public/layout/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="public/layout/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="public/layout/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="public/layout/css/nice-select.css">
-    <link rel="stylesheet" href="public/layout/css/jarallax.css">
-    <link rel="stylesheet" href="public/layout/css/flaticon.css">
-    <link rel="stylesheet" href="public/layout/css/slick.css">
-    <link rel="stylesheet" href="public/layout/css/default.css">
-    <link rel="stylesheet" href="public/layout/css/style.css">
-    <link rel="stylesheet" href="public/layout/css/responsive.css">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/layout1/src/css/style.css">
+    <link rel="stylesheet" href="public/layout1/src/css/logged.css">
+    <link rel="stylesheet" href="public/layout1/src/css/product.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>

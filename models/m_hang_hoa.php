@@ -23,4 +23,28 @@ class m_hang_hoa extends database {
     }
 
 
+    public function comments_products($id){
+        $sql = "SELECT COUNT(*)view_products FROM binh_luan WHERE id_hh = ?";
+        $this->setQuery($sql);
+
+        return $this->loadRow(array($id));
+    }
+
+    public function detail_product($id){
+        $sql = "SELECT * FROM hang_hoa WHERE id = ?";
+        $this->setQuery($sql);
+
+        return $this->loadRow(array($id));
+    }
+
+    public function read_lh($id){
+        $sql = "SELECT ten_loai FROM loai WHERE id = ?";
+        $this->setQuery($sql);
+
+        return $this->loadRow(array($id));
+    }
+
+
+
+
 }

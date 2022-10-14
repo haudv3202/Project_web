@@ -11,16 +11,11 @@
 <!-- BEGIN VENDOR JS-->
 <script src="public/theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
 <!-- BEGIN VENDOR JS-->
-<!-- BEGIN PAGE VENDOR JS-->
-<script src="public/theme-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script>
-<!-- END PAGE VENDOR JS-->
-<!-- BEGIN CHAMELEON  JS-->
-<script src="public/theme-assets/js/core/app-menu-lite.js" type="text/javascript"></script>
-<script src="public/theme-assets/js/core/app-lite.js" type="text/javascript"></script>
-<!-- END CHAMELEON  JS-->
+
 <!-- BEGIN PAGE LEVEL JS-->
 <script src="public/theme-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL JS-->
+<script src="public/theme-assets/js/custom_ad.js" type="text/javascript"></script>
 
 </body>
 </html>

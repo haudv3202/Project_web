@@ -25,7 +25,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <form>
+                                <form action="" method="POST">
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Mã Loại</label>
                                         <input type="text" disabled placeholder="Auto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -33,10 +33,10 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputPassword1" class="form-label">Tên Loại</label>
-                                        <input type="text" class="form-control" >
+                                        <input type="text" name="name_loai" class="form-control" >
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Add New</button>
-                                    <button type="button"  class="btn btn-danger">Rest Data</button>
+                                    <button type="submit" name="add_loai_hang" class="btn btn-primary">Add New</button>
+                                    <button type="reset"  class="btn btn-danger">Rest Data</button>
                                     <button type="button" onclick="location.href='ds_loai_hang.php'" class="btn btn-success">List</button>
                                 </form>
                             </div>

@@ -1,8 +1,21 @@
 <?php
+@session_start();
 include ("models/m_khach_hang.php");
 class c_register {
+    protected $us_kh;
+    function __construct() {
+        $this->us_kh = new m_khach_hang();
+    }
 
     public function index(){
+        if(isset($_SESSION["error_email"])){
+            $error_resgister = $_SESSION["error_email"];
+            echo "<script>alert('$error_resgister')</script>";
+            $this->unset_ss(["error_email"]);
+
+        }
+
+
         $view = "views/register_login/v_register.php";
         include ("templates/login_resgister/layout.php");
 
@@ -18,16 +31,22 @@ class c_register {
             $email = $this->checkData("email");
             $pass = $this->checkData("pass");
             $re_pass = $this->checkData("re_pass");
-            if($pass == $re_pass){
-                $nameImg = $this->uploadImage("image","public/layout/avatar_us/");
-                $account_us = new m_khach_hang();
-                $result = $account_us->resgister_user($id,$name,$pass,$email,$nameImg,$kich_hoat,$vaitro);
-                if($result){
-                    echo "<script>alert('Chào mừng bạn')</script>";
-                }
-            }else {
-                echo "<script>alert('Vui lòng nhập đúng mật khẩu')</script>";
-            }
+            $emailsv = $this->us_kh->check_email("$email");
+           if($email != $emailsv->email){
+               if($pass == $re_pass){
+                   $nameImg = $this->uploadImage("image","public/layout/avatar_us/");
+                   $account_us = new m_khach_hang();
+                   $result = $account_us->resgister_user($id,$name,$pass,$email,$nameImg,$kich_hoat,$vaitro);
+                   if($result){
+                       echo "<script>alert('Chào mừng bạn')</script>";
+                   }
+               }else {
+                   echo "<script>alert('Vui lòng nhập đúng mật khẩu')</script>";
+               }
+           }else {
+               $_SESSION["error_email"] = "Email đã tồn tại vui lòng đăng kí email khác";
+               header("Location:register.php");
+           }
         }
     }
 
@@ -70,4 +89,10 @@ class c_register {
 //        }
 ////        Nếu 1 trong các điều kiện bên trên false thì lập tức nhảy vào if luôn
 //    }
+
+    function unset_ss($name_unsets = []){
+        foreach($name_unsets as $value){
+            unset($_SESSION["$value"]);
+        }
+    }
 }

@@ -29,55 +29,36 @@
                                 <thead class="bg-light">
                                 <tr>
                                     <th>Id</th>
-                                    <th>Name Products</th>
-                                    <th>Amount</th>
-                                    <th>Highest price</th>
-                                    <th>Lowest price</th>
-                                    <th>Average price</th>
+                                    <th>Loại hàng</th>
+                                    <th class="text-center">Số lượng</th>
+                                    <th>Giá cao nhất</th>
+                                    <th>Giá thấp nhất</th>
+                                    <th>Trung bình giá</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php foreach($loais as $value){?>
                                 <tr >
                                     <td>
-                                        <p class="fw-bold m-0">#1</p>
+                                        <p class="fw-bold m-0">#<?php echo $value->id;?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">Máy tính bảng</p>
+                                        <p class="fw-bold m-0"><?php echo $value->ten_loai;?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">20</p>
+                                        <p class="fw-bold m-0 text-center"><?php echo isset($price_max_min_total["$value->id"]->so_luong) ? $price_max_min_total["$value->id"]->so_luong : "Không có sản phẩm nào";?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">50.000đ</p>
+                                        <p class="fw-bold m-0"><?php echo isset($price_max_min_total["$value->id"]->gia_max) ? $price_max_min_total["$value->id"]->gia_max : "0";?> đ</p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">10000đ</p>
+                                        <p class="fw-bold m-0"><?php echo isset($price_max_min_total["$value->id"]->gia_min) ? $price_max_min_total["$value->id"]->gia_min : "0";?> đ</p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">20.000đ</p>
+                                        <p class="fw-bold m-0"><?php echo isset($price_max_min_total["$value->id"]->trung_binh) ? $price_max_min_total["$value->id"]->trung_binh : "0";?> đ</p>
                                     </td>
                                 </tr>
-
-                                <tr >
-                                    <td>
-                                        <p class="fw-bold m-0">#2</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">Điện thoại</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">25</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">45.000đ</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">9000đ</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-bold m-0">14.000đ</p>
-                                    </td>
-                                </tr>
+                                <?php }?>
 
 
                                 </tbody>

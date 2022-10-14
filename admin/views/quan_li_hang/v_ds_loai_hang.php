@@ -28,46 +28,48 @@
                             <table class="table align-middle mb-0 bg-white">
                                 <thead class="bg-light">
                                 <tr>
-                                    <th></th>
+                                    <th class="text-center"><input onclick="toggle(this);" type="checkbox"></th>
                                     <th>Id</th>
-                                    <th>Name Products</th>
-                                    <th>Status</th>
-                                    <th>Settings</th>
+                                    <th>Tên loại hàng</th>
+                                    <th>Trạng thái</th>
+                                    <th>Chức năng</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-
+                                <?php foreach($ds_loai_hang as $value){ ?>
                                 <tr >
                                     <td class="text-center">
-                                        <input class="form-check-input" type="checkbox" class="" value="" id="flexCheckDefault">
+                                        <input  type="checkbox">
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">#1</p>
+                                        <p class="fw-bold m-0">#<?php echo $value->id;?></p>
                                     </td>
                                     <td>
-                                        <p class="fw-bold m-0">Máy tính bảng</p>
+                                        <p class="fw-bold m-0"><?php echo $value->ten_loai;?></p>
                                     </td>
                                     <td>
-                                        <span class="badge badge-success rounded-pill d-inline">Active</span>
+                                        <span class="badge badge-success rounded-pill d-inline">Thành công</span>
                                     </td>
                                     <td>
-                                        <button type="button" onclick="location.href='edit_loai_hang.php'" class="btn btn-sm btn-rounded ">
+                                        <button type="button" onclick="location.href='edit_loai_hang.php?id=<?php echo $value->id; ?>'" class="btn btn-sm btn-rounded ">
                                             Edit
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-rounded ">
+                                        <button type="button" onclick="confirm('Bạn có chắc chắn xóa không ?') ?  location.href='delete_loai_hang.php?id=<?php echo $value->id ?>' : '';"  class="btn btn-sm btn-rounded ">
                                             Delete
                                         </button>
                                     </td>
                                 </tr>
+                                <?php } ?>
+
 
                                 </tbody>
                             </table>
 
                             <div class="mt-2">
-                                <button type="button" class="btn btn-primary">Select All</button>
-                                <button type="button"  class="btn btn-danger">Deselect all</button>
-                                <button type="button"  class="btn btn-success">Delete selected items</button>
-                                <button type="button" onclick="location.href='quan_li_loai_hang.php'" class="btn btn-danger">Add more</button>
+                                <button type="button"  class="btn-selectALl btn btn-primary">Select All</button>
+                                <button type="button"  class="btn-de-selectALl btn btn-danger">Deselect all</button>
+                                <button type="button" onclick="confirm('Bạn có chắc chắn xóa không ?') ? location.href='deletes_loai_hang.php?id='+checkdata()+'' : '';" class="btn btn-success">Delete selected items</button>
+                                <button type="button" onclick="location.href='them_loai_hang.php'" class="btn btn-danger">Add more</button>
                             </div>
                         </div>
                     </div>

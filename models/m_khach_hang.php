@@ -14,4 +14,11 @@ class m_khach_hang extends database {
             $this->setQuery($sql);
             return $this->loadRow(array($email,md5($password)));
     }
+
+    public function check_email($email){
+        $sql = "SELECT * FROM khach_hang WHERE email = ? ";
+
+        $this->setQuery($sql);
+        return $this->loadRow(array($email));
+    }
 }
