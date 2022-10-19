@@ -213,7 +213,7 @@ tinymce.ThemeManager.add('modern', function(editor) {
 				menuButton = {text: menu.title};
 				menuItems = [];
 
-				// Default/user defined items
+				// Default/cUser defined items
 				each((menu.items || '').split(/[ ,]/), function(item) {
 					var menuItem = createMenuItem(item);
 

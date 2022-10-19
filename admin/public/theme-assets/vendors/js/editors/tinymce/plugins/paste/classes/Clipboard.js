@@ -43,7 +43,7 @@ define("tinymce/pasteplugin/Clipboard", [
 		/**
 		 * Pastes the specified HTML. This means that the HTML is filtered and then
 		 * inserted at the current selection in the editor. It will also fire paste events
-		 * for custom user filtering.
+		 * for custom cUser filtering.
 		 *
 		 * @param {String} html HTML code to paste into the current selection.
 		 */

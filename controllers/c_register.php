@@ -34,7 +34,7 @@ class c_register {
             $emailsv = $this->us_kh->check_email("$email");
            if($email != $emailsv->email){
                if($pass == $re_pass){
-                   $nameImg = $this->uploadImage("image","public/layout/avatar_us/");
+                   $nameImg = $this->uploadImage("image","public/layout1/avatar_us/");
                    $account_us = new m_khach_hang();
                    $result = $account_us->resgister_user($id,$name,$pass,$email,$nameImg,$kich_hoat,$vaitro);
                    if($result){

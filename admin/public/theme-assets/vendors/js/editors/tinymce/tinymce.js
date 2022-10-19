@@ -2475,7 +2475,7 @@ getText = Sizzle.getText = function( elem ) {
 
 Expr = Sizzle.selectors = {
 
-	// Can be adjusted by the user
+	// Can be adjusted by the cUser
 	cacheLength: 50,
 
 	createPseudo: markFunction,
@@ -2711,7 +2711,7 @@ Expr = Sizzle.selectors = {
 				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
 					Sizzle.error( "unsupported pseudo: " + pseudo );
 
-			// The user may use createPseudo to indicate that
+			// The cUser may use createPseudo to indicate that
 			// arguments are needed to create the filter function
 			// just as Sizzle does
 			if ( fn[ expando ] ) {
@@ -9042,7 +9042,7 @@ define("tinymce/dom/DOMUtils", [
 			var self = this, r = self.createRng(), bef, aft, pa;
 
 			// W3C valid browsers tend to leave empty nodes to the left/right side of the contents - this makes sense
-			// but we don't want that in our code since it serves no purpose for the end user
+			// but we don't want that in our code since it serves no purpose for the end cUser
 			// For example splitting this html at the bold element:
 			//   <p>text 1<span><b>CHOP</b></span>text 2</p>
 			// would produce:
@@ -9822,7 +9822,7 @@ define("tinymce/AddOnManager", [
  */
 
 /**
- * This method is responsible for rendering/generating the overall user interface with toolbars, buttons, iframe containers etc.
+ * This method is responsible for rendering/generating the overall cUser interface with toolbars, buttons, iframe containers etc.
  *
  * @method renderUI
  * @param {Object} obj Object parameter containing the targetNode DOM node that will be replaced visually with an editor instance.
@@ -12213,7 +12213,7 @@ define("tinymce/html/Schema", [
 			});
 		}
 
-		// If the user didn't allow span only allow internal spans
+		// If the cUser didn't allow span only allow internal spans
 		if (!getElementRule('span')) {
 			addValidElements('span[!data-mce-type|*]');
 		}
@@ -14386,7 +14386,7 @@ define("tinymce/dom/Serializer", [
 				value = node.firstChild ? node.firstChild.value : '';
 
 				if (name === "script") {
-					// Remove mce- prefix from script elements and remove default type since the user specified
+					// Remove mce- prefix from script elements and remove default type since the cUser specified
 					// a script element without type attribute
 					type = node.attr('type');
 					if (type) {
@@ -15452,7 +15452,7 @@ define("tinymce/dom/ControlSelection", [
 			targetWidth = rect.width || (rect.right - rect.left);
 			targetHeight = rect.height || (rect.bottom - rect.top);
 
-			// Reset width/height if user selects a new image/table
+			// Reset width/height if cUser selects a new image/table
 			if (selectedElm != targetElm) {
 				detachResizeStartListener();
 				selectedElm = targetElm;
@@ -17903,7 +17903,7 @@ define("tinymce/dom/Selection", [
 				if (tryCompareBoundaryPoints(rng.START_TO_START, rng, self.selectedRange) === 0 &&
 					tryCompareBoundaryPoints(rng.END_TO_END, rng, self.selectedRange) === 0) {
 					// Safari, Opera and Chrome only ever select text which causes the range to change.
-					// This lets us use the originally set range if the selection hasn't been changed by the user.
+					// This lets us use the originally set range if the selection hasn't been changed by the cUser.
 					rng = self.explicitRange;
 				} else {
 					self.selectedRange = null;
@@ -18904,7 +18904,7 @@ define("tinymce/Formatter", [
 				register(name, {block: name, remove: 'all'});
 			});
 
-			// Register user defined formats
+			// Register cUser defined formats
 			register(ed.settings.formats);
 		}
 
@@ -19103,7 +19103,7 @@ define("tinymce/Formatter", [
 				}
 
 				// Adjust selection so that a end container with a end offset of zero is not included in the selection
-				// as this isn't visible to the user.
+				// as this isn't visible to the cUser.
 				var rng = ed.selection.getRng();
 				var start = rng.startContainer;
 				var end = rng.endContainer;
@@ -21275,7 +21275,7 @@ define("tinymce/UndoManager", [
 			data: data,
 
 			/**
-			 * State if the user is currently typing or not. This will add a typing operation into one undo
+			 * State if the cUser is currently typing or not. This will add a typing operation into one undo
 			 * level instead of one new level for each keystroke.
 			 *
 			 * @field {Boolean} typing
@@ -21925,7 +21925,7 @@ define("tinymce/EnterKey", [
 				editor.execCommand("InsertLineBreak", false, evt);
 			}
 
-			// Trims any linebreaks at the beginning of node user for example when pressing enter in a PRE element
+			// Trims any linebreaks at the beginning of node cUser for example when pressing enter in a PRE element
 			function trimLeadingLineBreaks(node) {
 				do {
 					if (node.nodeType === 3) {
@@ -23442,7 +23442,7 @@ define("tinymce/EditorCommands", [
 		 *
 		 * @method execCommand
 		 * @param {String} command Command to execute.
-		 * @param {Boolean} ui Optional user interface state.
+		 * @param {Boolean} ui Optional cUser interface state.
 		 * @param {Object} value Optional value for command.
 		 * @param {Object} args Optional extra arguments to the execCommand.
 		 * @return {Boolean} true/false if the command was found or not.
@@ -23948,7 +23948,7 @@ define("tinymce/EditorCommands", [
 					selection.setRng(rng);
 				} else {
 					// IE will render it's own root level block elements and sometimes
-					// even put font elements in them when the user starts typing. So we need to
+					// even put font elements in them when the cUser starts typing. So we need to
 					// move the selection to a more suitable element from this:
 					// <body>|<p></p></body> to this: <body><p>|</p></body>
 					rng = selection.getRng();
@@ -24171,7 +24171,7 @@ define("tinymce/util/URI", [
 	"tinymce/util/Tools"
 ], function(Tools) {
 	var each = Tools.each, trim = Tools.trim;
-	var queryParts = "source protocol authority userInfo user password host port relative path directory file query anchor".split(' ');
+	var queryParts = "source protocol authority userInfo cUser password host port relative path directory file query anchor".split(' ');
 	var DEFAULT_PORTS = {
 		'ftp': 21,
 		'http': 80,
@@ -26672,7 +26672,7 @@ define("tinymce/ui/ClassList", [
 
 /**
  * This class will automatically reflow controls on the next animation frame within a few milliseconds on older browsers.
- * If the user manually reflows then the automatic reflow will be cancelled. This class is used internally when various control states
+ * If the cUser manually reflows then the automatic reflow will be cancelled. This class is used internally when various control states
  * changes that triggers a reflow.
  *
  * @class tinymce.ui.ReflowQueue
@@ -26726,7 +26726,7 @@ define("tinymce/ui/ReflowQueue", [
 		},
 
 		/**
-		 * Removes the specified control from the automatic reflow. This will happen when for example the user
+		 * Removes the specified control from the automatic reflow. This will happen when for example the cUser
 		 * manually triggers a reflow.
 		 *
 		 * @method remove
@@ -30159,7 +30159,7 @@ define("tinymce/ui/Window", [
 	var windows = [], oldMetaValue = '';
 
 	function toggleFullScreenState(state) {
-		var noScaleMetaValue = 'width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0',
+		var noScaleMetaValue = 'width=device-width,initial-scale=1.0,cUser-scalable=0,minimum-scale=1.0,maximum-scale=1.0',
 			viewport = $("meta[name=viewport]")[0],
 			contentValue;
 
@@ -30774,7 +30774,7 @@ define("tinymce/ui/MessageBox", [
 			 *
 			 * @method alert
 			 * @param {Object} settings Settings for the alert dialog.
-			 * @param {function} [callback] Callback to execute when the user makes a choice.
+			 * @param {function} [callback] Callback to execute when the cUser makes a choice.
 			 */
 			alert: function(settings, callback) {
 				if (typeof settings == "string") {
@@ -30790,7 +30790,7 @@ define("tinymce/ui/MessageBox", [
 			 *
 			 * @method confirm
 			 * @param {Object} settings Settings for the confirm dialog.
-			 * @param {function} [callback] Callback to execute when the user makes a choice.
+			 * @param {function} [callback] Callback to execute when the cUser makes a choice.
 			 */
 			confirm: function(settings, callback) {
 				if (typeof settings == "string") {
@@ -30985,7 +30985,7 @@ define("tinymce/WindowManager", [
 		 *
 		 * @method alert
 		 * @param {String} message Text to display in the new alert dialog.
-		 * @param {function} callback Callback function to be executed after the user has selected ok.
+		 * @param {function} callback Callback function to be executed after the cUser has selected ok.
 		 * @param {Object} scope Optional scope to execute the callback in.
 		 * @example
 		 * // Displays an alert box using the active editors window manager instance
@@ -31015,7 +31015,7 @@ define("tinymce/WindowManager", [
 		 *
 		 * @method confirm
 		 * @param {String} message Text to display in the new confirm dialog.
-		 * @param {function} callback Callback function to be executed after the user has selected ok or cancel.
+		 * @param {function} callback Callback function to be executed after the cUser has selected ok or cancel.
 		 * @param {Object} scope Optional scope to execute the callback in.
 		 * @example
 		 * // Displays an confirm box and an alert message will be displayed depending on what you choose in the confirm
@@ -32604,7 +32604,7 @@ define("tinymce/util/Quirks", [
 		 * WebKit has a weird issue where it some times fails to properly convert keypresses to input method keystrokes.
 		 * The IME on Mac doesn't initialize when it doesn't fire a proper focus event.
 		 *
-		 * This seems to happen when the user manages to click the documentElement element then the window doesn't get proper focus until
+		 * This seems to happen when the cUser manages to click the documentElement element then the window doesn't get proper focus until
 		 * you enter a character into the editor.
 		 *
 		 * It also happens when the first focus in made to the body.
@@ -32686,7 +32686,7 @@ define("tinymce/util/Quirks", [
 		 */
 		function focusBody() {
 			// Fix for a focus bug in FF 3.x where the body element
-			// wouldn't get proper focus if the user clicked on the HTML element
+			// wouldn't get proper focus if the cUser clicked on the HTML element
 			if (!window.Range.prototype.getClientRects) { // Detect getClientRects got introduced in FF 4
 				editor.on('mousedown', function(e) {
 					if (!isDefaultPrevented(e) && e.target.nodeName === "HTML") {
@@ -32868,7 +32868,7 @@ define("tinymce/util/Quirks", [
 		}
 
 		/**
-		 * Moves style width/height to attribute width/height when the user resizes an image on IE.
+		 * Moves style width/height to attribute width/height when the cUser resizes an image on IE.
 		 */
 		function removePreSerializedStylesWhenSelectingControls() {
 			dom.bind(editor.getBody(), 'mouseup', function() {
@@ -33148,7 +33148,7 @@ define("tinymce/util/Quirks", [
 			// Make HTML element unselectable since we are going to handle selection by hand
 			doc.documentElement.unselectable = true;
 
-			// Detect when user selects outside BODY
+			// Detect when cUser selects outside BODY
 			dom.bind(doc, 'mousedown contextmenu', function(e) {
 				if (e.target.nodeName === 'HTML') {
 					if (started) {
@@ -33204,7 +33204,7 @@ define("tinymce/util/Quirks", [
 
 		/**
 		 * iOS has a bug where it's impossible to type if the document has a touchstart event
-		 * bound and the user touches the document while having the on screen keyboard visible.
+		 * bound and the cUser touches the document while having the on screen keyboard visible.
 		 *
 		 * The touch event moves the focus to the parent document while having the caret inside the iframe
 		 * this fix moves the focus back into the iframe document.
@@ -33224,7 +33224,7 @@ define("tinymce/util/Quirks", [
 		 * by clicking on the white area HTML element. We used to be able to to fix this with
 		 * the fixCaretSelectionOfDocumentElementOnIe fix. But since M$ removed the selection
 		 * object it's not possible anymore. So we need to hack in a ungly CSS to force the
-		 * body to be at least 150px. If the user clicks the HTML element out side this 150px region
+		 * body to be at least 150px. If the cUser clicks the HTML element out side this 150px region
 		 * we simply move the focus into the first paragraph. Not ideal since you loose the
 		 * positioning of the caret but goot enough for most cases.
 		 */
@@ -33549,7 +33549,7 @@ define("tinymce/EditorObservable", [
 		}
 
 		// Need to bind mousedown/mouseup etc to document not body in iframe mode
-		// Since the user might click on the HTML element not the BODY
+		// Since the cUser might click on the HTML element not the BODY
 		if (!editor.inline && /^mouse|click|contextmenu|drop|dragover|dragend/.test(eventName)) {
 			return editor.getDoc().documentElement;
 		}
@@ -36639,7 +36639,7 @@ define("tinymce/SelectionOverrides", [
  *     some_setting: 1
  * }, tinymce.EditorManager);
  *
- * // Select each item the user clicks on
+ * // Select each item the cUser clicks on
  * ed.on('click', function(e) {
  *     ed.selection.select(e.target);
  * });
@@ -37285,7 +37285,7 @@ define("tinymce/Editor", [
 				'var ed = window.parent.tinymce.get("' + self.id + '");document.write(ed.iframeHTML);' +
 				'document.close();ed.initContentBody(true);})()';
 
-			// Domain relaxing is required since the user has messed around with document.domain
+			// Domain relaxing is required since the cUser has messed around with document.domain
 			if (document.domain != location.hostname) {
 				// Edge seems to be able to handle domain relaxing
 				if (Env.ie && Env.ie < 12) {
@@ -38457,14 +38457,14 @@ define("tinymce/Editor", [
 		},
 
 		/**
-		 * Returns true/false if the editor is dirty or not. It will get dirty if the user has made modifications to the contents.
+		 * Returns true/false if the editor is dirty or not. It will get dirty if the cUser has made modifications to the contents.
 		 *
 		 * The dirty state is automatically set to true if you do modifications to the content in other
 		 * words when new undo levels is created or if you undo/redo to update the contents of the editor. It will also be set
 		 * to false if you call editor.save().
 		 *
 		 * @method isDirty
-		 * @return {Boolean} True/false if the editor is dirty or not. It will get dirty if the user has made modifications to the contents.
+		 * @return {Boolean} True/false if the editor is dirty or not. It will get dirty if the cUser has made modifications to the contents.
 		 * @example
 		 * if (tinymce.activeEditor.isDirty())
 		 *     alert("You must save your contents.");
@@ -38603,7 +38603,7 @@ define("tinymce/Editor", [
 		},
 
 		/**
-		 * URL converter function this gets executed each time a user adds an img, a or
+		 * URL converter function this gets executed each time a cUser adds an img, a or
 		 * any other element that has a URL in it. This will be called both by the DOM and HTML
 		 * manipulation functions.
 		 *
@@ -38732,7 +38732,7 @@ define("tinymce/Editor", [
 		 * but you can also call it directly if you know what you are doing.
 		 *
 		 * @method destroy
-		 * @param {Boolean} automatic Optional state if the destroy is an automatic destroy or user called one.
+		 * @param {Boolean} automatic Optional state if the destroy is an automatic destroy or cUser called one.
 		 */
 		destroy: function(automatic) {
 			var self = this, form;
@@ -38742,7 +38742,7 @@ define("tinymce/Editor", [
 				return;
 			}
 
-			// If user manually calls destroy and not remove
+			// If cUser manually calls destroy and not remove
 			// Users seems to have logic that calls destroy instead of remove
 			if (!automatic && !self.removed) {
 				self.remove();
@@ -39049,7 +39049,7 @@ define("tinymce/FocusManager", [
 					}
 
 					// Handles the issue with WebKit not retaining selection within inline document
-					// If the user releases the mouse out side the body since a mouse up event wont occur on the body
+					// If the cUser releases the mouse out side the body since a mouse up event wont occur on the body
 					if (Env.webkit && !selectionChangeHandler) {
 						selectionChangeHandler = function() {
 							var activeEditor = editorManager.activeEditor;
@@ -39144,7 +39144,7 @@ define("tinymce/FocusManager", [
 				DOM.bind(document, 'focusin', documentFocusInHandler);
 			}
 
-			// Handle edge case when user starts the selection inside the editor and releases
+			// Handle edge case when cUser starts the selection inside the editor and releases
 			// the mouse outside the editor producing a new selection. This weird workaround is needed since
 			// Gecko doesn't have the "selectionchange" event we need to do this. Fixes: #6843
 			if (editor.inline && !documentMouseUpHandler) {
@@ -41836,7 +41836,7 @@ define("tinymce/ui/PanelButton", [
 /**
  * This class creates a color button control. This is a split button in which the main
  * button has a visual representation of the currently selected color. When clicked
- * the caret button displays a color picker, allowing the user to select a new color.
+ * the caret button displays a color picker, allowing the cUser to select a new color.
  *
  * @-x-less ColorButton.less
  * @class tinymce.ui.ColorButton

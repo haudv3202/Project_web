@@ -21,4 +21,17 @@ class m_khach_hang extends database {
         $this->setQuery($sql);
         return $this->loadRow(array($email));
     }
+
+    public function update_user($id,$fullname,$password,$email,$image){
+        $sql = "UPDATE khach_hang SET ho_ten = ?,mat_khau = ?,email = ?,hinh = ? WHERE id = ?";
+
+        $this->setQuery($sql);
+        return $this->execute(array($fullname,md5($password),$email,$image,$id));
+    }
+
+    public function read_user($id){
+        $sql = "SELECT * FROM khach_hang WHERE id = ? ";
+        $this->setQuery($sql);
+        return $this->loadRow(array($id));
+    }
 }

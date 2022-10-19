@@ -333,7 +333,7 @@ tinymce.PluginManager.add('link', function(editor) {
 					return;
 				}
 
-				// Is email and not //user@domain.com
+				// Is email and not //cUser@domain.com
 				if (href.indexOf('@') > 0 && href.indexOf('//') == -1 && href.indexOf('mailto:') == -1) {
 					delayedConfirm(
 						'The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?',

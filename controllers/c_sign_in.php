@@ -59,7 +59,7 @@ class c_sign_in {
 
 
     public function log_out(){
-        $this->unset_ss(["user","error_login"]);
+        $this->unset_ss(["cUser","error_login"]);
         header("location:login.php");
     }
 

@@ -13,6 +13,10 @@ class c_home {
             $wel_user = $_SESSION["welcome_user"];
             echo "<script>alert('$wel_user')</script>";
             $this->unset_ss(["welcome_user"]);
+        }else if(isset($_SESSION["update_user"])){
+            $update_user = $_SESSION["update_user"];
+            echo "<script>alert('$update_user')</script>";
+            $this->unset_ss(["update_user"]);
         }
         include ("models/m_hang_hoa.php");
         $m_hang_hoa = new m_hang_hoa();

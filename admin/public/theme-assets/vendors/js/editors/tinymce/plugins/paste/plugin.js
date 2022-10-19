@@ -287,7 +287,7 @@ define("tinymce/pasteplugin/Clipboard", [
 		/**
 		 * Pastes the specified HTML. This means that the HTML is filtered and then
 		 * inserted at the current selection in the editor. It will also fire paste events
-		 * for custom user filtering.
+		 * for custom cUser filtering.
 		 *
 		 * @param {String} html HTML code to paste into the current selection.
 		 */
@@ -1308,7 +1308,7 @@ define("tinymce/pasteplugin/WordFilter", [
 					valid_children: '-li[p]'
 				});
 
-				// Add style/class attribute to all element rules since the user might have removed them from
+				// Add style/class attribute to all element rules since the cUser might have removed them from
 				// paste_word_valid_elements config option and we need to check them for properties
 				Tools.each(schema.elements, function(rule) {
 					/*eslint dot-notation:0*/

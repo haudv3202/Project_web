@@ -54,7 +54,7 @@ class c_khach_hang {
                 $kich_hoat = $this->checkData("kich_hoat_up");
                 $vai_tro = $this->checkData("vai_tro_up");
                 $image = NULL;
-                if(strtolower($vai_tro) == "user"){
+                if(strtolower($vai_tro) == "cUser"){
                     $image = $this->uploadImage("image_user_up","../public/layout1/avatar_us/");
                 }else {
                     $image = $this->uploadImage("image_user_up","public/theme-assets/avatar_admin/");

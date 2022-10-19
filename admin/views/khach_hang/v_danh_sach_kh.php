@@ -48,7 +48,7 @@
                                     <td class="align-middle">
                                         <div class="d-flex align-items-center">
                                             <img
-                                                    src="<?php echo strtolower($value->vai_tro)  == "user" ? "../public/layout/avatar_us/" :  "public/theme-assets/avatar_admin/"; ?><?php echo $value->hinh;?>"
+                                                    src="<?php echo strtolower($value->vai_tro)  == "cUser" ? "../public/layout1/avatar_us/" :  "public/theme-assets/avatar_admin/"; ?><?php echo $value->hinh;?>"
                                                     alt=""
                                                     style="width: 45px; height: 45px"
                                                     class="rounded-circle"

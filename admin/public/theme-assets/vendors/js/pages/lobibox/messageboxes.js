@@ -22,7 +22,7 @@ var Lobibox = Lobibox || {};
     Lobibox.progress = function (options) {
         return new LobiboxProgress(options);
     };
-    //Create empty objects in order user to be able to set default options in the following way
+    //Create empty objects in order cUser to be able to set default options in the following way
     //Lobibox.error.DEFAULT_OPTIONS = object;
     //Lobibox.success.DEFAULT_OPTIONS = object;
     //Lobibox.warning.DEFAULT_OPTIONS = object;

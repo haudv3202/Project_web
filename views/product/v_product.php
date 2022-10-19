@@ -73,90 +73,45 @@
 <!-- =============comment============= -->
 <div class="container">
     <div class="be-comment-block">
-        <h1 class="comments-title">Bình luận (3)</h1>
+        <h1 class="comments-title">Bình luận (<?php echo $views_commets->views;?>)</h1>
+        <?php foreach ($commets as $value){?>
         <div class="be-comment">
             <div class="be-img-comment">
                 <a href="">
-                    <img src="public/layout1/src/img/cuong.jpg" alt="" class="be-ava-comment">
+                    <img src="public/layout1/avatar_us/<?php echo $users["$value->id"][0]->hinh;?>" alt="" class="be-ava-comment">
                 </a>
             </div>
             <div class="be-comment-content">
 
                         <span class="be-comment-name">
-                            <a href="blog-detail-2.html">Cường Em ti vi</a>
+                            <a href="blog-detail-2.html"><?php echo $users["$value->id"][0]->ho_ten;?></a>
                         </span>
                 <span class="be-comment-time">
                             <i class="fa fa-clock-o"></i>
-                            12/10/2022 at 3:14am
+                            <?php echo $value->ngay_bl;?>
                         </span>
 
                 <p class="be-comment-text">
-                    Khi gặp bug hãy đội máy tính lên đầu ! Đó là cách giải quyết của tôi
+                   <?php echo $value->noi_dung;?>
                 </p>
             </div>
+
         </div>
-        <div class="be-comment">
-            <div class="be-img-comment">
-                <a href="">
-                    <img src="public/layout1/src/img/hau.jpg" alt="" class="be-ava-comment">
-                </a>
-            </div>
-            <div class="be-comment-content">
-                        <span class="be-comment-name">
-                            <a href="blog-detail-2.html">Hậu Gaming</a>
-                        </span>
-                <span class="be-comment-time">
-                            <i class="fa fa-clock-o"></i>
-                            12/10/2022 at 3:14am
-                        </span>
-                <p class="be-comment-text">
-                    Nếu đẹp là cái tội thì bài dự án mẫu của bạn xứng đáng tử hình
-                </p>
-            </div>
-        </div>
-        <div class="be-comment">
-            <div class="be-img-comment">
-                <a href="">
-                    <img src="public/layout1/src/img/hai.jpg" alt="" class="be-ava-comment">
-                </a>
-            </div>
-            <div class="be-comment-content">
-                        <span class="be-comment-name">
-                            <a href="">Hải dớ</a>
-                        </span>
-                <span class="be-comment-time">
-                            <i class="fa fa-clock-o"></i>
-                            12/10/2022 at 3:14am
-                        </span>
-                <p class="be-comment-text">
-                    Đừng khen tôi đẹp trai, vì tôi có đẹp cỡ mấy cũng bị lép vế bởi dự án mẫu của bạn!
-                </p>
-            </div>
-        </div>
-        <form class="form-block">
+        <?php }?>
+        <?php if(isset($_SESSION["info"])){?>
+        <form class="form-block" action="" method="POST">
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="form-group fl_icon">
-                        <div class="icon"><i class="fa fa-user"></i></div>
-                        <input class="form-input" id="name_product" type="text" placeholder="Your name"
-                               required>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 fl_icon">
-                    <div class="form-group fl_icon">
-                        <div class="icon"><i class="fa fa-envelope-o"></i></div>
-                        <input class="form-input" id="email_product" type="text" placeholder="Your email"
-                               required>
-                    </div>
-                </div>
                 <div class="col-xs-12">
                     <div class="form-group">
-                        <textarea class="form-input" required="" placeholder="Your text"></textarea>
+                        <textarea class="form-input" name="commets" required="" placeholder="Your text"></textarea>
                     </div>
                 </div>
-                <input class="submit_product" type="submit"></input>
+                <button type="submit" class="submit_product" name="commets_sub" >Gửi</button>
             </div>
         </form>
+        <?php }else {?>
+            <a href="sign_in.php" class="signup-image-link h5 my-5 text-danger text-center d-block">Bạn phải đăng nhập để bình luận</a>
+        <?php }?>
     </div>
 </div>
 
@@ -165,72 +120,19 @@
     <div class="new_arrivals">
         <h3>Có thể bạn quan tâm </h3>
         <div class="content_arr">
+            <?php foreach ($related as $value){?>
             <div class="item_new_arrivals">
-                <img width="100%" src="public/layout1/src/img/arr1.jpg" alt="">
-                <p>Canon EOS 5D Mark IV DSLR Camera</p>
-                <p><span style="color: red;">$130</span><del>$360.99</del></p>
+                <img width="100%" src="public/layout1/img_products/<?php echo $value->hinh;?>" alt="">
+                <p><?php echo $value->ten_hh;?></p>
+                <p><span style="color: red;"><?php echo $value->don_gia * $value->sale / 100; ?> đ</span><del><?php echo $value->don_gia;?>đ</del></p>
                 <p><i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i> <span>(2 Reviews)</span>
+                    <i class='bx bxs-star'></i> <span>(<?php echo $review["$value->id"]["0"]->review;?> Reviews)</span>
                 </p>
             </div>
-            <div class="item_new_arrivals">
-                <img src="public/layout1/src/img/arr2.jpg" alt="">
-                <p>Máy Ảnh Canon EOS 5D Mark IV DSLR Camera</p>
-                <p><span style="color: red;">$130</span><del>$360.99</del></p>
-                <p><i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i> <span>(2 Reviews)</span>
-                </p>
-            </div>
-            <div class="item_new_arrivals">
-                <img src="public/layout1/src/img/arr3.jpg" alt="">
-                <p>Máy Ảnh Canon EOS 5D Mark IV DSLR Camera</p>
-                <p><span style="color: red;">$130</span><del>$360.99</del></p>
-                <p><i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i> <span>(2 Reviews)</span>
-                </p>
-            </div>
-            <div class="item_new_arrivals">
-                <img src="public/layout1/src/img/arr4.jpg" alt="">
-                <p>Máy Ảnh Canon EOS 5D Mark IV DSLR Camera</p>
-                <p><span style="color: red;">$130</span><del>$360.99</del></p>
-                <p><i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i> <span>(2 Reviews)</span>
-                </p>
-            </div>
-            <div class="item_new_arrivals">
-                <img src="public/layout1/src/img/arr5.jpg" alt="">
-                <p>Máy Ảnh Canon EOS 5D Mark IV DSLR Camera</p>
-                <p><span style="color: red;">$130</span><del>$360.99</del></p>
-                <p><i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i> <span>(2 Reviews)</span>
-                </p>
-            </div>
-            <div class="item_new_arrivals">
-                <img src="public/layout1/src/img/arr6.jpg" alt="">
-                <p>Máy Ảnh Canon EOS 5D Mark IV DSLR Camera</p>
-                <p><span style="color: red;">$130</span><del>$360.99</del></p>
-                <p><i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i> <span>(2 Reviews)</span>
-                </p>
-            </div>
+           <?php }?>
         </div>
     </div>
 </div>

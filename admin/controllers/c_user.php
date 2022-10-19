@@ -4,7 +4,7 @@ include("models/m_khach_hang.php");
 class c_user {
     public function logout() {
         $_SESSION["logout_admin"] = "Bạn đã đăng xuất thành công!";
-        $this->unset_ss(["user","admin","error_login","admin_error","avatar_ad","id_ad"]);
+        $this->unset_ss(["cUser","admin","error_login","admin_error","avatar_ad","id_ad"]);
         header("location:../sign_in.php");
     }
 

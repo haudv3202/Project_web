@@ -85,7 +85,7 @@
                                 <button type="reset"  class="btn btn-danger">Rest Data</button>
                                 <button type="button" onclick="location.href='ds_khach_hang.php'" class="btn btn-success">List</button>
                             </form>
-                        </div>
+                        </div>S
                     </div>
                 </div>
             </div>

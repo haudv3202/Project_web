@@ -44,11 +44,10 @@
                             <?php if(isset($_SESSION["info"])){ ?>
                                 <li class="nav-item dropdown UserNew">
                                     <p class="color-a" href="">
-                                        <img src="public/layout1/src/img/cuong.jpg" alt="">
+                                        <img src="public/layout1/avatar_us/<?php echo $_SESSION["info"]->hinh;?>" alt="">
                                     </p>
                                     <div class="account">
-                                        <p> <i class='bx bx-loader-alt'></i> <a href="">Đổi pass</a></p>
-                                        <p> <i class='bx bxs-cloud-upload'></i> <a href="">Update</a></p>
+                                        <p> <i class='bx bxs-cloud-upload'></i> <a href="update_info.php?id_user=<?php echo $_SESSION["info"]->id; ?>">Update info</a></p>
                                         <p><i class='bx bx-log-out-circle bx-rotate-90' ></i> <a href="log_out.php">Logout</a></p>
                                     </div>
                                 </li>
@@ -76,7 +75,7 @@
         <div class="header_mid">
             <div class="logo_header">
 
-                <img src="public/layout1/src/img/logoHC.png" width="100px" alt="">
+                <a href="index.php"><img src="public/layout1/src/img/logoHC.png" width="100px" alt=""></a>
 
             </div>
             <div class="icon_header_mid">
@@ -167,7 +166,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
 
-                    <a class="navbar-brand" href="#">TẤT CẢ</a>
+                    <a class="navbar-brand" href="products.php">TẤT CẢ</a>
                     <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -178,7 +177,7 @@
                             style="--bs-scroll-height: 100px;">
                             <?php foreach ($loai_hang as $value){?>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#" role="button"
+                                <a class="nav-link" href="products.php?id_type=<?php echo $value->id;?>" role="button"
                                    aria-expanded="false">
                                     <?php echo $value->ten_loai;?>
                                 </a>

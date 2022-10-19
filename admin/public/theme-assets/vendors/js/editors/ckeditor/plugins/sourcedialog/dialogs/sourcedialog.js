@@ -46,7 +46,7 @@ CKEDITOR.dialog.add( 'sourcedialog', function( editor ) {
 					that = this;
 
 				// Avoid unnecessary setData. Also preserve selection
-				// when user changed his mind and goes back to wysiwyg editing.
+				// when cUser changed his mind and goes back to wysiwyg editing.
 				if ( newData === oldData )
 					return true;
 
@@ -55,7 +55,7 @@ CKEDITOR.dialog.add( 'sourcedialog', function( editor ) {
 				} );
 
 				// Don't let the dialog close before setData is over, to hide
-				// from user blinking caused by selection restoring and setting new data.
+				// from cUser blinking caused by selection restoring and setting new data.
 				return false;
 			};
 		} )(),
